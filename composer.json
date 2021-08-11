@@ -1,0 +1,15 @@
+{
+  "name": "mo/mo-survey",
+  "autoload": {
+    "psr-4": {
+      "Inc\\": "./inc"
+    }
+  },
+  "authors": [
+    {
+      "name": "mohammedrezq",
+      "email": "mohammedrezq2000@gmail.com"
+    }
+  ],
+  "require": {}
+}
