@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Mo Forms
+ * Plugin Name:       Survey Forms
  * Plugin URI:        https://example.com/plugins/the-basics/
  * Description:       Handle the basics with this plugin.
  * Version:           1.10.3
