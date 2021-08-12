@@ -22,5 +22,12 @@ class Dashboard extends BaseController {
 
         add_menu_page('Survey Kit','Survey Kit', 'manage_options','survey_kit', array($this->callbacks, 'adminDashboard'), 'dashicons-store', 110);
 	
+		add_submenu_page('survey_kit', 'Survey Kit', 'Survey Kit', 'manage_options','survey_kit');
+		
+		add_submenu_page('survey_kit', 'Survey Test', 'Survey Test', 'manage_options','survey_test', array($this->callbacks, 'surveyDashboard'), 2);
+
 	}
+
+
+
 }

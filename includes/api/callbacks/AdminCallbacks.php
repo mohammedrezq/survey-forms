@@ -14,4 +14,8 @@ class AdminCallbacks extends BaseController {
 
 		return require_once "$this->plugin_path/public/Admin.php";
 	}
+	public function surveyDashboard() {
+
+		return require_once "$this->plugin_path/public/Survey.php";
+	}
 }
