@@ -3,7 +3,7 @@
 /**
  * Trigger this file on Plugin uninstall
  *
- * @package SurveyKit
+ * @package survey-kit
  */
 
 if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
