@@ -2,3 +2,5 @@
 
 <h1>Test React on the backend</h1>
 <div id="react-app"></div><!-- #react-app -->
+
+<div style="margin-top:60px;" id="survey_repeater"></div><!-- #survey_repeater -->

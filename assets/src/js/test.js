@@ -21,4 +21,5 @@ const Votes = () => {
     </>
 	);
 };
-render( <Votes />, document.getElementById( `react-app` ) );
+export default Votes;
+// render( <Votes />, document.getElementById( `react-app` ) );
