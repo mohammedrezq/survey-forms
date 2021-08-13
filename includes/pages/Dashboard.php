@@ -28,6 +28,4 @@ class Dashboard extends BaseController {
 
 	}
 
-
-
 }
