@@ -2,8 +2,9 @@
   "name": "mo/mo-survey",
   "autoload": {
     "psr-4": {
-      "Inc\\": "./inc"
-    }
+      "Includes\\": "./includes"
+    },
+    "classmap": ["includes/"]
   },
   "authors": [
     {

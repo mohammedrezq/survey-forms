@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Survey Forms
+ * Plugin Name:       Survey Kit
  * Plugin URI:        https://example.com/plugins/the-basics/
  * Description:       Handle the basics with this plugin.
  * Version:           1.10.3
@@ -11,7 +11,7 @@
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Update URI:        https://example.com/my-plugin/
- * Text Domain:       survey-forms
+ * Text Domain:       survey-kit
  * Domain Path:       /languages
  */
 
@@ -40,3 +40,24 @@ if ( file_exists( dirname( __FILE__ ) . '/vendor/autoload.php' ) ) {
 	require_once dirname( __FILE__ ) . '/vendor/autoload.php';
 }
 
+/**
+ * The code that runs during plugin activation
+ *
+ * @return void
+ */
+function activate_survey_plugin() {
+	Includes\Base\Activate::activate();
+}
+register_activation_hook( __FILE__, 'activate_survey_plugin' );
+
+/**
+ * The code that runs during plugin deactivation
+ */
+function deactivate_survey_plugin() {
+	Includes\Base\Deactivate::deactivate();
+}
+register_deactivation_hook( __FILE__, 'deactivate_survey_plugin' );
+
+if ( class_exists( 'Includes\\Init' ) ) {
+	Includes\Init::register_services();
+}
